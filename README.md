@@ -1,46 +1,125 @@
-# Getting Started with Create React App
+# VIM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Normal mode
 
-## Available Scripts
+### 1.0 Basic operation (语义化操作)
 
-In the project directory, you can run:
+           [i ↑  Up]
 
-### `npm start`
+[j ← Left] [k ↓ Down] [l → Right]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+p -> paste
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+d -> delete
 
-### `npm test`
+c -> cut
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+f -> find
 
-### `npm run build`
+y -> yank
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+g -> go
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+o -> open (a new line)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+u -> undo
 
-### `npm run eject`
+#### 1.0.0（Operator doubling）
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+yy -> yank a line
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+dd -> delete a link
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+cc -> cut a line(and change to the insert mode)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+gg -> go to the first line
 
-## Learn More
+#### 1.0.1 Combine with {{count}}
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. relative line number with i/j
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+{{n}} + i/j
+
+2. absolute line number with gg
+
+{{n}} + gg
+
+3. delete/yank/cut {{count}} line
+   // 30k
+   // F
+   // C
+
+{{n}} dd/yy/cc
+
+#### 1.0.2 The Uppercase to reverse the action
+
+find: <- F f ->
+
+paste: <- P p ->
+
+go to the last/first line: G/gg
+
+open a new line: o/O
+
+#### 1.0.3 Combine with Text Object
+
+1. yank/delete/cut inner word (yiw/diw/ciw)
+
+2. yank/delete/cut inner surrounding character
+
+```
+y/d/c + '       ->      'hello world'
+y/d/c + `       ->      `hello world`
+y/d/c + "       ->      "hello world"
+y/d/c + ()      ->      ( hello world )
+y/d/c + []      ->      [ hello world ]
+y/d/c + <       ->      <div/>
+
+y/d/c + {}      ->      { hello world }
+// @TodoCalendarService.java
+```
+
+### 1.1 Operation with Plugins
+
+Supercharge your workflow!
+
+#### 1.1.0 The <leader> key
+
+Prefix key for plugins
+
+### 1.1.1 「Easymotion」 plugin
+
+```
+// s(search){char}
+<leader>s{char}
+```
+
+如果是在大屏幕，能够容纳超多行的 code file，这个插件的效果会更好
+
+### 1.1.2 「Vim Surround」 plugin
+
+```
+String
+```
+
+### 1.1.3 Replace with register
+
+#### 1.1.2.0 VIM Registers
+
+```
+:reg
+
+1. **无名寄存器** `"`：默认存储删除/复制内容
+```
+
+#### 1.1.2.1 Mutiple operations with registers
+
+```
+byiw -> yank inner word into {b} register
+cyiw -> yank inner word into {c} register
+
+bp   -> paste {b} register
+cp   -> paste {c} register
+```
+
+#### 1.1.2.2 「ReplaceWithRegister」 plugin
