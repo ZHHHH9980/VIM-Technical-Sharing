@@ -40,14 +40,11 @@ gg -> go to the first line
 
 {{n}} + i/j
 
-2. absolute line number with gg
+2. absolute line number with gg (不重要)
 
 {{n}} + gg
 
 3. delete/yank/cut {{count}} line
-   // 30k
-   // F
-   // C
 
 {{n}} dd/yy/cc
 
@@ -123,3 +120,23 @@ cp   -> paste {c} register
 ```
 
 #### 1.1.2.2 「ReplaceWithRegister」 plugin
+
+## 2. Visual mode
+
+### 2.1 Visual 正则替换
+
+```
+export enum LoginReportPositionSourceEnum {
+  // origin
+  personal
+  task_result_detail
+  subscription
+  headshot
+
+  // target
+  personal = 'personal',
+  task_result_detail = 'task_result_detail',
+  subscription = 'subscription',
+  headshot = 'headshot',
+}
+```
