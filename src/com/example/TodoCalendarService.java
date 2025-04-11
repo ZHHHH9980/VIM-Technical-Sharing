@@ -181,7 +181,6 @@ public Map<LocalDate, Map<TaskPriority, List<TodoTask>>> generateMonthlyCalendar
                 }
             }
             
-            // 冗余的日志输出
             System.out.println("日期: " + date);
             System.out.println("总任务数: " + total);
             System.out.println("已完成: " + completed);

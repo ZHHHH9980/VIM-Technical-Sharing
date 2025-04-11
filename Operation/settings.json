@@ -1,0 +1,161 @@
+{
+  // plugin
+  "vim.timeout": 500,
+  "vim.leader": " ",
+  "vim.surround": true,
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "blue",
+  "vim.easymotionMarkerForegroundColorOneChar": "white",
+  "vim.replaceWithRegister": true,
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+      // 1.0 Basic operation
+      // let k become ↓
+      {
+          "before": [
+              "k"
+          ],
+          "after": [
+              "j"
+          ]
+      },
+
+      // Enhance k operation 
+      {
+          "before": [
+              "K"
+          ],
+          "after": [
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j"
+          ]
+      },
+
+      // let i become ↑
+      {
+          "before": [
+              "i"
+          ],
+          "after": [
+              "k"
+          ]
+      },
+
+      // enhance i
+      {
+          "before": [
+              "I"
+          ],
+          "after": [
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k"
+          ]
+      },
+
+      // let j become ←
+      {
+          "before": [
+              "j"
+          ],
+          "after": [
+              "h"
+          ]
+      },
+      // enhance j
+      {
+          "before": [
+              "J"
+          ],
+          "after": [
+              "I"
+          ]
+      },
+
+      // l → is default, no need to remap
+      // enhance l
+      {
+          "before": [
+              "L"
+          ],
+          "after": [
+              "A"
+          ]
+      },
+
+      // let h become i(insert)
+      {
+          "before": [
+              "h"
+          ],
+          "after": [
+              "i"
+          ]
+      },
+
+      // 2.0 Navigation
+      // go (to) reference
+      {
+          "before": [
+              "g",
+              "r"
+          ],
+          "commands": [
+              "editor.action.referenceSearch.trigger"
+          ]
+      },
+
+      // Navigation with tabs
+      {
+          "before": [
+              "E"
+          ],
+          "after": [
+              "g",
+              "T"
+          ]
+      },
+      {
+          "before": [
+              "R"
+          ],
+          "after": [
+              "g",
+              "t"
+          ]
+      },
+
+      // 3.0 Plugins
+      // replaceWithRegister
+      {
+          "before": [
+              "r"
+          ],
+          "after": [
+              "\"",
+              "a",
+              "g",
+              "r"
+          ]
+      }
+  ]
+}
