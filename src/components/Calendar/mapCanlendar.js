@@ -1,7 +1,6 @@
 // 目标：生成某年某月的日历表格
 
 // @deprecated - 旧版实现
-// 问题1：拼写错误 Calander → Calendar
 function mapCalanderV1(month, year) {
   const daysInMonth = (m, y) => new Date(y, m + 1, 0).getDate();
   const days = daysInMonth(month, year);
@@ -11,14 +10,13 @@ function mapCalanderV1(month, year) {
     .map((_, i) => <div key={i}>{i + 1}</div>);
 }
 
+// line:10 拼写错误 Calander → Calendar
 function mapCalendarV2(month, year) {
-  // 1. 获取当月天数 (visual line + y + p)
+  const days = new Date(year, month + 1, 0).getDate();
 
-  // 2. 生成日期数组（演示 yy/p 复制行）
   const weeks = [];
   let week = [];
 
-  // 3. 按周分组（演示 >> 缩进）
   for (let day = 1; day <= days; day++) {
     week.push(day);
     if (week.length === 7 || day === days) {
