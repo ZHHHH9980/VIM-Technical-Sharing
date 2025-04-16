@@ -12,33 +12,37 @@ import java.util.stream.Collectors;
  */
 public class TodoCalendarService {
 
-// TODO: 
-// 1. DELETE ME (di{})
-// 2. paste Map to MapV2
-// ==================== 核心方法 ====================
-/**
- * 生成月历视图（故意写得很恶心的版本）
- * @param month 目标月份 (1-12)
- * @param year 目标年份
- * @param tasks 原始任务列表
- * @param includeHolidays 是否包含节假日
- * @param showCompleted 是否显示已完成任务
- * @param groupByPriority 是否按优先级分组
- * @param currentUser 当前用户
- * @param timeZone 时区
- * @return 按日分组的日历数据
- * @throws TodoException 各种可能的异常
- */
-public Map<LocalDate, Map<TaskPriority, List<TodoTask>>> generateMonthlyCalendar(
-    int month, 
-    int year, 
-    List<TodoTask> tasks,
-    boolean includeHolidays,
-    boolean showCompleted,
-    boolean groupByPriority,
-    User currentUser,
-    TimeZone timeZone
-) throws TodoException, InvalidDateException, PermissionDeniedException, TaskProcessingException {
+    private static final String _TAG = "TodoCalendarService";
+
+    // TODO: 
+    // 1. DELETE ME (di{})
+    // 2. paste Map to MapV2
+    // ==================== 核心方法 ====================
+    /**
+     * 生成月历视图（故意写得很恶心的版本）
+     * @param month 目标月份 (1-12)
+     * @param year 目标年份
+     * @param tasks 原始任务列表
+     * @param includeHolidays 是否包含节假日
+     * @param showCompleted 是否显示已完成任务
+     * @param groupByPriority 是否按优先级分组
+     * @param currentUser 当前用户
+     * @param timeZone 时区
+     * @return 按日分组的日历数据
+     * @throws TodoException 各种可能的异常
+     */
+    public Map<LocalDate, Map<TaskPriority, List<TodoTask>>> generateMonthlyCalendar(
+        int month, 
+        int year, 
+        List<TodoTask> tasks,
+        boolean includeHolidays,
+        boolean showCompleted,
+        boolean groupByPriority,
+        User currentUser,
+        TimeZone timeZone
+
+    // TODO: Operation with this function {}
+    ) throws TodoException, InvalidDateException, PermissionDeniedException, TaskProcessingException {
         // === 1. 参数验证（过度复杂版）===
         if (month < 1 || month > 12) {
             throw new InvalidDateException("月份必须为1-12，但你传入了：" + month);
@@ -135,6 +139,9 @@ public Map<LocalDate, Map<TaskPriority, List<TodoTask>>> generateMonthlyCalendar
         // === 5. 添加节假日标记（冗余判断版）===
         if (includeHolidays) {
             List<Holiday> holidays = HolidayService.getHolidays(year, month);
+            
+            // import _Tag
+            
             if (holidays != null && !holidays.isEmpty()) {
                 for (Holiday holiday : holidays) {
                     if (holiday != null && holiday.getDate() != null) {
@@ -192,6 +199,7 @@ public Map<LocalDate, Map<TaskPriority, List<TodoTask>>> generateMonthlyCalendar
         }
 
         return calendar;
+    // TODO: copy this whole function logic with %
     }
 
     // ==================== 工具方法 ====================

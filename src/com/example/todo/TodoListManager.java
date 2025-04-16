@@ -7,7 +7,7 @@ public class TodoListManager {
     private List<String> tasks = new ArrayList<>();
 
     public void addTask(String task) {
-        // gd
+        // check validateTask's definition
         if (TodoUtils.validateTask(task)) {  // 调用工具类方法
             tasks.add(task);
             System.out.println("Task added: " + task);

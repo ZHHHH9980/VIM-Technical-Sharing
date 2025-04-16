@@ -1,8 +1,8 @@
 package com.example.todo;  
 
-// gr
 public class TodoUtils {
     // 任务校验
+    // go to the reference of this method
     public static boolean validateTask(String task) {
         return task != null && !task.trim().isEmpty();
     }
