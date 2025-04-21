@@ -20,13 +20,8 @@ api.map("k", "j");
 api.map("K", "d"); // 'd' 是 SurfingKeys 默认的向下滚动键
 api.map("I", "e"); // 'e' 是 SurfingKeys 默认的向上滚动键
 
-// Frequently used mappings
+api.vmap("i", "k"); // 按 i 时向上扩大选区（原 k 的功能）
+api.vmap("k", "j"); // 按 k 时向下扩大选区（原 j 的功能）
 
 // Shift + w
 // move current Tab to a new window
-
-// x
-// close current Tab
-
-// X
-// restore last closed Tab
