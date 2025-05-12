@@ -291,4 +291,9 @@ public class TodoCalendarService {
     public MapV2<LocalDate, Map<TaskPriority, List<TodoTask>>> generateMonthlyCalendar(){
 
     }
+
+    // 这个函数写的更优雅，于是用它来 ri{
+    public MapV3<LocalDate, Map<TaskPriority, List<TodoTask>>> generateMonthlyCalendar(){
+
+    }
 }
