@@ -342,6 +342,33 @@
       "after": ["m", "a", "g", "g"]
     },
     /*
+     * Key: g [
+     * Description: Jump to next error/warning (marker)
+     * Module: Navigation
+     */
+    {
+      "before": ["g", "["],
+      "commands": ["editor.action.marker.next"]
+    },
+    /*
+     * Key: g ]
+     * Description: Jump to previous error/warning (marker)
+     * Module: Navigation
+     */
+    {
+      "before": ["g", "]"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    /*
+     * Key: g h
+     * Description: Show hover info
+     * Module: Navigation
+     */
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showHover"]
+    },
+    /*
      * Key: G
      * Description: Set mark [a] (side effect) then jump to file end
      * Module: Navigation
