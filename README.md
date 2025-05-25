@@ -1,11 +1,16 @@
 # VIM-Enhanced Development Ecosystem
 
+
 A curated collection of configuration files and productivity tools for creating a unified VIM-inspired workflow across development environments. Includes integrations for:
 
 - IDE (Cursor)
 - 🖥 Terminal (ZSH/Tmux)
 - 🌐 Browsers (SurfingKeys extension)
 - ⌨ Input Devices (Karabiner)
+
+## The Codesandbox playground 
+
+[Codesandbox playground](https://codesandbox.io/p/github/ZHHHH9980/VIM-Technical-Sharing/master?file=%2FVIMTechnologySharing%2F1.basicOperation.md%3A24%2C1&workspaceId=ws_CptD9c1UnNBKTgzgUkdrVQ)
 
 ## Project Structure
 
