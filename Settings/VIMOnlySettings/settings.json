@@ -2,6 +2,8 @@
   "vim.leader": " ",
   "vim.sneak": true,
   "vim.surround": true,
+  // Enable system clipboard integration (uses * register) for yanking and pasting
+  "vim.useSystemClipboard": true,
   "vim.replaceWithRegister": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "blue",
@@ -618,7 +620,21 @@
       ]
     },
     /* --- Module: CRUD --- */
-    /* Yank/Delete/Cut operations */
+    /* Yank/Delete/Cut/Paste operations */
+    /*
+     * Key: P
+     * Description: Yank to register [a]
+     */
+    {
+      "before": [
+        "P"
+      ],
+      "after": [
+        "\"",
+        "*",
+        "p"
+      ]
+    },
     /*
      * Key: y
      * Description: Yank to register [a]
