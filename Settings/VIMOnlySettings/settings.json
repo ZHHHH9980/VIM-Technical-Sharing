@@ -12,16 +12,26 @@
      * Description: Exit insert mode using jk sequence
      */
     {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     },
     /*
      * Key: k j
      * Description: Exit insert mode using kj sequence
      */
     {
-      "before": ["k", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.insertModeKeyBindingsNonRecursive": [
@@ -35,7 +45,12 @@
      * 4. Position cursor at message placeholder
      */
     {
-      "before": [".", "l", "o", "g"],
+      "before": [
+        ".",
+        "l",
+        "o",
+        "g"
+      ],
       "after": [
         "<Esc>",
         "v",
@@ -79,68 +94,123 @@
      * Description: Remap k to j for 🔽 movement
      */
     {
-      "before": ["k"],
-      "after": ["j"]
+      "before": [
+        "k"
+      ],
+      "after": [
+        "j"
+      ]
     },
     /*
      * Key: i
      * Description: Remap i to k for 🔼 movement
      */
     {
-      "before": ["i"],
-      "after": ["k"]
+      "before": [
+        "i"
+      ],
+      "after": [
+        "k"
+      ]
     },
     /*
      * Key: j
      * Description: Remap j to h for ◀️ movement
      */
     {
-      "before": ["j"],
-      "after": ["h"]
+      "before": [
+        "j"
+      ],
+      "after": [
+        "h"
+      ]
     },
     /*
      * Key: K
      * Description: Super-jump 🔽 (12 lines)
      */
     {
-      "before": ["K"],
-      "after": ["j", "j", "j", "j", "j", "j", "j", "j", "j", "j", "j", "j"]
+      "before": [
+        "K"
+      ],
+      "after": [
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j"
+      ]
     },
     /*
      * Key: I
      * Description: Super-jump 🔼 (12 lines)
      */
     {
-      "before": ["I"],
-      "after": ["k", "k", "k", "k", "k", "k", "k", "k", "k", "k", "k", "k"]
+      "before": [
+        "I"
+      ],
+      "after": [
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k"
+      ]
     },
     /*
      * Key: J
      * Description: Remap J → 0 (start of line)
      */
     {
-      "before": ["J"],
-      "after": ["0"]
+      "before": [
+        "J"
+      ],
+      "after": [
+        "0"
+      ]
     },
     /*
      * Key: L
      * Description: Remap L → $h (end of line)
      */
     {
-      "before": ["L"],
-      "after": ["$", "h"]
+      "before": [
+        "L"
+      ],
+      "after": [
+        "$",
+        "h"
+      ]
     },
-
     /* --- Module: Comment --- */
     /*
      * Key: g b c
      * Description: Toggle block comment
      */
     {
-      "before": ["g", "b", "c"],
-      "commands": ["editor.action.blockComment"]
+      "before": [
+        "g",
+        "b",
+        "c"
+      ],
+      "commands": [
+        "editor.action.blockComment"
+      ]
     },
-
     /* --- Module: Plugin --- */
     /*
      * Key: gc
@@ -148,7 +218,6 @@
      * Module: Comment
      */
     /*  <-----  Module: Comment [End] ------> */
-
     /*  <-----  Module: Plugin [Start] ------> */
     /*
      * Key: <leader> + w
@@ -156,18 +225,26 @@
      * Plugin: Whichkey
      */
     {
-      "before": ["<leader>", "w"],
-      "commands": ["whichkey.show"]
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "whichkey.show"
+      ]
     },
-
     /*
      * Key: W
      * Description: Open WhichKey menu (alternative)
      * Plugin: WhichKey
      */
     {
-      "before": ["W"],
-      "commands": ["whichkey.show"]
+      "before": [
+        "W"
+      ],
+      "commands": [
+        "whichkey.show"
+      ]
     },
     /*
      * Key: r
@@ -175,54 +252,90 @@
      * Plugin: ReplaceWithRegister
      */
     {
-      "before": ["r"],
-      "after": ["\"", "a", "g", "r"]
+      "before": [
+        "r"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "g",
+        "r"
+      ]
     },
-
     /* --- Module: CRUD --- */
     /*
      * Key: y
      * Description: Yank to register [a]
      */
     {
-      "before": ["y"],
-      "after": ["\"", "a", "y"]
+      "before": [
+        "y"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "y"
+      ]
     },
     /*
      * Key: d
      * Description: Delete to blackhole register
      */
     {
-      "before": ["d"],
-      "after": ["\"", "_", "d"]
+      "before": [
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d"
+      ]
     },
-
     /*
      * Key: n d
      * Description: Delete to register [a]
      */
     {
-      "before": ["n", "d"],
-      "after": ["\"", "a", "d"]
+      "before": [
+        "n",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "d"
+      ]
     },
     /*
      * Key: c
      * Description: Cut to blackhole register
      */
     {
-      "before": ["c"],
-      "after": ["\"", "_", "c"]
+      "before": [
+        "c"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "c"
+      ]
     },
     /*
      * Key: n c
      * Description: Cut to register [a]
      */
     {
-      "before": ["n", "c"],
-      "after": ["\"", "a", "c"]
+      "before": [
+        "n",
+        "c"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "c"
+      ]
     }
   ],
-
   "vim.normalModeKeyBindings": [],
   "vim.normalModeKeyBindingsNonRecursive": [
     /* --- Module: Movement --- */
@@ -231,32 +344,59 @@
      * Description: Move down (j)
      */
     {
-      "before": ["k"],
-      "after": ["j"]
+      "before": [
+        "k"
+      ],
+      "after": [
+        "j"
+      ]
     },
     /*
      * Key: i
      * Description: Move 🔼 (k)
      */
     {
-      "before": ["i"],
-      "after": ["k"]
+      "before": [
+        "i"
+      ],
+      "after": [
+        "k"
+      ]
     },
     /*
      * Key: j
      * Description: Move left (h)
      */
     {
-      "before": ["j"],
-      "after": ["h"]
+      "before": [
+        "j"
+      ],
+      "after": [
+        "h"
+      ]
     },
     /*
      * Key: K
      * Description: Jump down 12 lines
      */
     {
-      "before": ["K"],
-      "after": ["j", "j", "j", "j", "j", "j", "j", "j", "j", "j", "j", "j"]
+      "before": [
+        "K"
+      ],
+      "after": [
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j",
+        "j"
+      ]
     },
     /*
      * Key: I
@@ -265,8 +405,23 @@
      * Module: Movement
      */
     {
-      "before": ["I"],
-      "after": ["k", "k", "k", "k", "k", "k", "k", "k", "k", "k", "k", "k"]
+      "before": [
+        "I"
+      ],
+      "after": [
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k",
+        "k"
+      ]
     },
     /*
      * Key: H
@@ -275,16 +430,24 @@
      * Module: Movement
      */
     {
-      "before": ["H"],
-      "after": ["0"]
+      "before": [
+        "H"
+      ],
+      "after": [
+        "0"
+      ]
     },
     /*
      * Key: J
      * Description: Insert at line start (I)
      */
     {
-      "before": ["J"],
-      "after": ["I"]
+      "before": [
+        "J"
+      ],
+      "after": [
+        "I"
+      ]
     },
     /*
      * Key: h
@@ -292,8 +455,12 @@
      * Why this design: j left-movement key is (h)
      */
     {
-      "before": ["h"],
-      "after": ["i"]
+      "before": [
+        "h"
+      ],
+      "after": [
+        "i"
+      ]
     },
     /*
      * Key: L
@@ -301,36 +468,54 @@
      * Why this design: Since lowercase l moves right, uppercase L naturally extends to end-of-line insertion
      */
     {
-      "before": ["L"],
-      "after": ["A"]
+      "before": [
+        "L"
+      ],
+      "after": [
+        "A"
+      ]
     },
-
     /* --- Module: Navigation --- */
     /*
      * Key: <leader> a
      * Description: Jump to mark [a]
      */
     {
-      "before": ["<leader>", "a"],
-      "after": ["`", "a"]
+      "before": [
+        "<leader>",
+        "a"
+      ],
+      "after": [
+        "`",
+        "a"
+      ]
     },
     /*
      * Key: g r
      * Description: Find references
      */
     {
-      "before": ["g", "r"],
-      "commands": ["editor.action.referenceSearch.trigger"]
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.referenceSearch.trigger"
+      ]
     },
-
     /*
      * Key: g f
      * Description: Quick file open
      * Command: workbench.action.quickOpen
      */
     {
-      "before": ["g", "f"],
-      "commands": ["workbench.action.quickOpen"]
+      "before": [
+        "g",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     },
     /*
      * Key: g g
@@ -338,8 +523,16 @@
      * Module: Navigation
      */
     {
-      "before": ["g", "g"],
-      "after": ["m", "a", "g", "g"]
+      "before": [
+        "g",
+        "g"
+      ],
+      "after": [
+        "m",
+        "a",
+        "g",
+        "g"
+      ]
     },
     /*
      * Key: g [
@@ -347,8 +540,13 @@
      * Module: Navigation
      */
     {
-      "before": ["g", "["],
-      "commands": ["editor.action.marker.next"]
+      "before": [
+        "g",
+        "["
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
     },
     /*
      * Key: g ]
@@ -356,8 +554,13 @@
      * Module: Navigation
      */
     {
-      "before": ["g", "]"],
-      "commands": ["editor.action.marker.prev"]
+      "before": [
+        "g",
+        "]"
+      ],
+      "commands": [
+        "editor.action.marker.prev"
+      ]
     },
     /*
      * Key: g h
@@ -365,8 +568,13 @@
      * Module: Navigation
      */
     {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showHover"]
+      "before": [
+        "g",
+        "h"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
     },
     /*
      * Key: G
@@ -374,52 +582,84 @@
      * Module: Navigation
      */
     {
-      "before": ["G"],
-      "after": ["m", "a", "G"]
+      "before": [
+        "G"
+      ],
+      "after": [
+        "m",
+        "a",
+        "G"
+      ]
     },
     /*
      * Key: E
      * Description: Previous tab (gT)
      */
     {
-      "before": ["E"],
-      "after": ["g", "T"]
+      "before": [
+        "E"
+      ],
+      "after": [
+        "g",
+        "T"
+      ]
     },
     /*
      * Key: R
      * Description: Next tab (gt)
      */
     {
-      "before": ["R"],
-      "after": ["g", "t"]
+      "before": [
+        "R"
+      ],
+      "after": [
+        "g",
+        "t"
+      ]
     },
-
     /* --- Module: CRUD --- */
-
     /* Yank/Delete/Cut operations */
     /*
      * Key: y
      * Description: Yank to register [a]
      */
     {
-      "before": ["y"],
-      "after": ["\"", "a", "y"]
+      "before": [
+        "y"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "y"
+      ]
     },
     /*
      * Key: c
      * Description: Cut to blackhole register
      */
     {
-      "before": ["c"],
-      "after": ["\"", "_", "c"]
+      "before": [
+        "c"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "c"
+      ]
     },
     /*
      * Key: C
      * Description: Cut line to blackhole register
      */
     {
-      "before": ["C"],
-      "after": ["\"", "_", "C"]
+      "before": [
+        "C"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "C"
+      ]
     },
     /*
      * Key: n c
@@ -427,124 +667,228 @@
      * Module: CRUD
      */
     {
-      "before": ["n", "c"],
-      "after": ["\"", "a", "c"]
+      "before": [
+        "n",
+        "c"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "c"
+      ]
     },
     /*
      * Key: n C
      * Description: Cut line to register [a]
      */
     {
-      "before": ["n", "C"],
-      "after": ["\"", "a", "C"]
+      "before": [
+        "n",
+        "C"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "C"
+      ]
     },
     /*
      * Key: d
      * Description: Delete to blackhole register
      */
     {
-      "before": ["d"],
-      "after": ["\"", "_", "d"]
+      "before": [
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d"
+      ]
     },
     /*
      * Key: n d
      * Description: Delete to register [a]
      */
     {
-      "before": ["n", "d"],
-      "after": ["\"", "a", "d"]
+      "before": [
+        "n",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "d"
+      ]
     },
     /*
      * Key: d d
      * Description: Delete line to blackhole register
      */
     {
-      "before": ["d", "d"],
-      "after": ["\"", "_", "d", "d"]
+      "before": [
+        "d",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "d",
+        "d"
+      ]
     },
     /*
      * Key: n d d
      * Description: Delete line to register [a]
      */
     {
-      "before": ["n", "d", "d"],
-      "after": ["\"", "a", "d", "d"]
+      "before": [
+        "n",
+        "d",
+        "d"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "d",
+        "d"
+      ]
     },
     /*
      * Key: p
      * Description: Paste from register [a]
      */
     {
-      "before": ["p"],
-      "after": ["\"", "a", "p"]
+      "before": [
+        "p"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "p"
+      ]
     },
-
     /* Register-specific operations */
     /*
      * Key: b y
      * Description: Yank to register [b]
      */
     {
-      "before": ["b", "y"],
-      "after": ["\"", "b", "y"]
+      "before": [
+        "b",
+        "y"
+      ],
+      "after": [
+        "\"",
+        "b",
+        "y"
+      ]
     },
     /*
      * Key: c y
      * Description: Yank to register [c]
      */
     {
-      "before": ["c", "y"],
-      "after": ["\"", "c", "y"]
+      "before": [
+        "c",
+        "y"
+      ],
+      "after": [
+        "\"",
+        "c",
+        "y"
+      ]
     },
     /*
      * Key: d y
      * Description: Yank to register [d]
      */
     {
-      "before": ["d", "y"],
-      "after": ["\"", "d", "y"]
+      "before": [
+        "d",
+        "y"
+      ],
+      "after": [
+        "\"",
+        "d",
+        "y"
+      ]
     },
     /*
      * Key: e y
      * Description: Yank to register [e]
      */
     {
-      "before": ["e", "y"],
-      "after": ["\"", "e", "y"]
+      "before": [
+        "e",
+        "y"
+      ],
+      "after": [
+        "\"",
+        "e",
+        "y"
+      ]
     },
     /*
      * Key: b p
      * Description: Paste from register [b]
      */
     {
-      "before": ["b", "p"],
-      "after": ["\"", "b", "p"]
+      "before": [
+        "b",
+        "p"
+      ],
+      "after": [
+        "\"",
+        "b",
+        "p"
+      ]
     },
     /*
      * Key: c p
      * Description: Paste from register [c]
      */
     {
-      "before": ["c", "p"],
-      "after": ["\"", "c", "p"]
+      "before": [
+        "c",
+        "p"
+      ],
+      "after": [
+        "\"",
+        "c",
+        "p"
+      ]
     },
     /*
      * Key: d p
      * Description: Paste from register [d]
      */
     {
-      "before": ["d", "p"],
-      "after": ["\"", "d", "p"]
+      "before": [
+        "d",
+        "p"
+      ],
+      "after": [
+        "\"",
+        "d",
+        "p"
+      ]
     },
     /*
      * Key: e p
      * Description: Paste from register [e]
      */
     {
-      "before": ["e", "p"],
-      "after": ["\"", "e", "p"]
+      "before": [
+        "e",
+        "p"
+      ],
+      "after": [
+        "\"",
+        "e",
+        "p"
+      ]
     },
-
     /* --- Module: Plugin --- */
     /*
      * Key: W
@@ -552,8 +896,12 @@
      * Plugin: WhichKey
      */
     {
-      "before": ["W"],
-      "commands": ["whichkey.show"]
+      "before": [
+        "W"
+      ],
+      "commands": [
+        "whichkey.show"
+      ]
     },
     /*
      * Key: <leader> w
@@ -561,24 +909,44 @@
      * Plugin: WhichKey
      */
     {
-      "before": ["<leader>", "w"],
-      "commands": ["whichkey.show"]
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "whichkey.show"
+      ]
     },
     /*
      * Key: r
      * Description: Replace with register [a]
      */
     {
-      "before": ["r"],
-      "after": ["\"", "a", "g", "r"]
+      "before": [
+        "r"
+      ],
+      "after": [
+        "\"",
+        "a",
+        "g",
+        "r"
+      ]
     },
     /*
      * Key: b r
      * Description: Replace with register [b]
      */
     {
-      "before": ["b", "r"],
-      "after": ["\"", "b", "g", "r"]
+      "before": [
+        "b",
+        "r"
+      ],
+      "after": [
+        "\"",
+        "b",
+        "g",
+        "r"
+      ]
     },
     /* Easymotion integration */
     /*
@@ -587,8 +955,14 @@
      * Plugin: Easymotion
      */
     {
-      "before": ["S"],
-      "after": ["<leader>", "<leader>", "s"]
+      "before": [
+        "S"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
+      ]
     },
     /*
      * Key: <leader> s
@@ -596,26 +970,44 @@
      * Plugin: Easymotion
      */
     {
-      "before": ["<leader>", "s"],
-      "after": ["<leader>", "<leader>", "s"]
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
+      ]
     },
-
     /* Special line operations */
     /*
      * Key: d L
      * Description: Delete to end of line
      */
     {
-      "before": ["d", "L"],
-      "after": ["d", "$"]
+      "before": [
+        "d",
+        "L"
+      ],
+      "after": [
+        "d",
+        "$"
+      ]
     },
     /*
      * Key: d J
      * Description: Delete to line start
      */
     {
-      "before": ["d", "J"],
-      "after": ["d", "^"]
+      "before": [
+        "d",
+        "J"
+      ],
+      "after": [
+        "d",
+        "^"
+      ]
     }
   ],
   "whichkey.bindings": [
@@ -625,7 +1017,6 @@
       "type": "command",
       "command": "workbench.action.showCommands"
     },
-
     {
       "key": "?",
       "name": "Search keybindings",
@@ -730,14 +1121,12 @@
         }
       ]
     },
-
     {
       "key": "k",
       "name": "Show all keybindings in [keyboard shortcuts]",
       "type": "command",
       "command": "workbench.action.openGlobalKeybindings"
     },
-
     {
       "key": "f",
       "name": "+File",
@@ -820,7 +1209,6 @@
         }
       ]
     },
-
     {
       "key": "G",
       "name": "+Git",
@@ -832,28 +1220,24 @@
           "type": "command",
           "command": "workbench.view.scm"
         },
-
         {
           "key": "b",
           "name": "Accept both",
           "type": "command",
           "command": "merge-conflict.accept.both"
         },
-
         {
           "key": "c",
           "name": "Accept current",
           "type": "command",
           "command": "merge-conflict.accept.current"
         },
-
         {
           "key": "i",
           "name": "Accept incoming",
           "type": "command",
           "command": "merge-conflict.accept.incoming"
         },
-
         {
           "key": "B",
           "name": "Accept all both",
@@ -872,14 +1256,12 @@
           "type": "command",
           "command": "merge-conflict.accept.all-incoming"
         },
-
         {
           "key": "k",
           "name": "Compare current conflict",
           "type": "command",
           "command": "merge-conflict.compare"
         },
-
         {
           "key": "n",
           "name": "Next Conflict",
@@ -894,7 +1276,6 @@
         }
       ]
     },
-
     {
       "key": "g",
       "name": "+Go",
@@ -908,7 +1289,6 @@
         }
       ]
     },
-
     {
       "key": "y", // 例如放在 'y' (Yank) 键下
       "name": "+Copy",
@@ -996,7 +1376,6 @@
         }
       ]
     },
-
     {
       "key": "t",
       "name": "+Tabs operation",
@@ -1008,7 +1387,6 @@
           "type": "command",
           "command": "workbench.action.closeOtherEditors"
         },
-
         {
           "key": "X",
           "name": "View: Reopen Closed Editor",
@@ -1058,7 +1436,6 @@
           "type": "command",
           "command": "workbench.action.focusNextGroup"
         },
-
         {
           "key": "z",
           "name": "Combine all editors",
@@ -1104,7 +1481,6 @@
             "cancelSelection" // Add this command
           ]
         },
-
         {
           "key": "t",
           "name": "Close all editor groups",
@@ -1138,7 +1514,6 @@
         }
       ]
     },
-
     {
       "key": "1",
       "name": "Focus first editor group",
@@ -1151,7 +1526,6 @@
       "type": "command",
       "command": "workbench.action.focusSecondEditorGroup"
     },
-
     {
       "key": "r",
       "name": "Rename symbol",

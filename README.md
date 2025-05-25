@@ -2,8 +2,8 @@
 
 A curated collection of configuration files and productivity tools for creating a unified VIM-inspired workflow across development environments. Includes integrations for:
 
+- IDE (Cursor)
 - 🖥 Terminal (ZSH/Tmux)
-- 🖱 GUI Editors (VSCode)
 - 🌐 Browsers (SurfingKeys extension)
 - ⌨ Input Devices (Karabiner)
 
