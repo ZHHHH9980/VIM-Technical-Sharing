@@ -1,35 +1,46 @@
-# VIM-Enhanced Development Ecosystem
+# Vimified Modern IDE
 
+A modern development environment that brings Vim's efficiency to contemporary tools. This repository contains both configuration files for a Vim-powered development setup and comprehensive documentation on mastering Vim-style workflows.
 
-A curated collection of configuration files and productivity tools for creating a unified VIM-inspired workflow across development environments. Includes integrations for:
-
-- IDE (Cursor)
-- 🖥 Terminal (ZSH/Tmux)
-- 🌐 Browsers (SurfingKeys extension)
-- ⌨ Input Devices (Karabiner)
-
-
-## Project Structure
+## Repository Structure
 
 ```
 .
-├── Settings/
-│   ├── MyCompleteSettings/         # Full-stack environment config
-│   │   ├── .zshrc                 # Comprehensive ZSH setup
-│   │   └── karabiner/            # Keyboard remapping configs
+├── config/                        # All configuration files
+│   ├── ide/                      # IDE-specific configurations
+│   │   ├── cursor/              # Cursor IDE settings
+│   │   │   └── settings.json    # Vim keybindings and preferences
+│   │   └── vscode/             # VSCode configurations (if needed)
 │   │
-│   ├── VIMOnlySettings/          # VIM-specific optimizations
-│   │   ├── .zshrc                # Shell integration for VIM workflows
-│   │   ├── settings.json         # VSCode VIM extension configuration
-│   │   └── surfingkeys.js        # Browser extension `Surfingkeys` settings
+│   ├── terminal/                # Terminal environment setup
+│   │   ├── zsh/                # ZSH configurations
+│   │   │   ├── .zshrc         # Main ZSH configuration
+│   │   │   └── aliases.zsh    # Custom aliases
+│   │   └── tmux/              # Terminal multiplexer
+│   │       └── tmux.conf      # Tmux configuration
 │   │
-│   └── tmux.conf                 # Terminal multiplexer setup
+│   ├── keyboard/               # Keyboard customization
+│   │   └── karabiner/         # Karabiner configurations
+│   │
+│   └── browser/                # Browser Vim integration
+│       └── surfingkeys.js      # SurfingKeys extension config
 │
-└── VIMTechnologySharing/
-    ├── DemoSrcCode/              # Practical implementation examples
-    ├── 1.basicOperation.md       # Core VIM operations
-    ├── 2.navigation.md           # Efficient movement patterns
-    └── 3.plugins.md              # Ecosystem extensions guide
+├── docs/                         # Documentation and guides
+│   ├── getting-started/         # Setup and installation guides
+│   │   ├── installation.md     # Installation instructions
+│   │   └── quick-start.md      # Basic usage guide
+│   │
+│   ├── tutorials/               # Learning materials
+│   │   ├── basic-operations.md # Core Vim operations
+│   │   ├── navigation.md       # Movement patterns
+│   │   └── plugins.md         # Plugin ecosystem guide
+│   │
+│   └── examples/               # Example code and use cases
+│       └── demo/              # Demonstration code
+│
+└── scripts/                     # Installation and setup scripts
+    ├── install.sh              # Main installation script
+    └── setup/                  # Setup utilities
 ```
 
 ## Core Features
