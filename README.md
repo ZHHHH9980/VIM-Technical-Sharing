@@ -25,3 +25,5 @@ This repository contains my personal configuration for a Vim-powered Cursor IDE 
 4. copy the content of Settings/settings.json to the file
 5. Save the file
 6. Install the extension 'VSCodeVim' and 'Which Key'(optional)
+
+![image](https://github.com/ZHHHH9980/Vimified-Mordern-IDE/blob/master/assets/VScodeVimExtension.png?raw=true)
