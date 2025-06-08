@@ -7,8 +7,8 @@ public class TodoListManager {
     private List<String> tasks = new ArrayList<>();
 
     public void addTask(String task) {
-        // check validateTask's definition
-        if (TodoUtils.validateTask(task)) {  // 调用工具类方法
+        // TODO: Use 'gd' to check validateTask's definition
+        if (TodoUtils.validateTask(task)) {
             tasks.add(task);
             System.out.println("Task added: " + task);
         } else {
@@ -19,14 +19,14 @@ public class TodoListManager {
     public void showTasks() {
         System.out.println("Current Tasks:");
         for (String task : tasks) {
-            System.out.println(TodoUtils.formatTask(task));  // 调用工具类方法
+            System.out.println(TodoUtils.formatTask(task));
         }
     }
 
     public static void main(String[] args) {
         TodoListManager manager = new TodoListManager();
         manager.addTask("Buy milk");
-        manager.addTask("");  // 会被校验拦截
+        manager.addTask(""); // 会被校验拦截
         manager.addTask("Write code");
         manager.showTasks();
     }

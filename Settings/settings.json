@@ -1,4 +1,5 @@
 {
+  "vim.timeout": 800,
   "vim.leader": " ",
   "vim.sneak": true,
   "vim.surround": true,
@@ -10,9 +11,9 @@
   "vim.easymotionMarkerForegroundColorOneChar": "white",
   "vim.insertModeKeyBindings": [
     /*
-     * Key: j k
-     * Description: Exit insert mode using jk sequence
-     */
+       * Key: j k
+       * Description: Exit insert mode using jk sequence
+       */
     {
       "before": [
         "j",
@@ -23,9 +24,9 @@
       ]
     },
     /*
-     * Key: k j
-     * Description: Exit insert mode using kj sequence
-     */
+       * Key: k j
+       * Description: Exit insert mode using kj sequence
+       */
     {
       "before": [
         "k",
@@ -38,14 +39,14 @@
   ],
   "vim.insertModeKeyBindingsNonRecursive": [
     /*
-     * Key: . l o g
-     * Description: Expand to console.log template with placeholders
-     * Flow:
-     * 1. Exit insert mode
-     * 2. Visual select to line start
-     * 3. Insert console.log template
-     * 4. Position cursor at message placeholder
-     */
+       * Key: . l o g
+       * Description: Expand to console.log template with placeholders
+       * Flow:
+       * 1. Exit insert mode
+       * 2. Visual select to line start
+       * 3. Insert console.log template
+       * 4. Position cursor at message placeholder
+       */
     {
       "before": [
         ".",
@@ -92,9 +93,9 @@
   "vim.visualModeKeyBindingsNonRecursive": [
     /* --- Module: Movement --- */
     /*
-     * Key: k
-     * Description: Remap k to j for 🔽 movement
-     */
+       * Key: k
+       * Description: Remap k to j for 🔽 movement
+       */
     {
       "before": [
         "k"
@@ -104,9 +105,9 @@
       ]
     },
     /*
-     * Key: i
-     * Description: Remap i to k for 🔼 movement
-     */
+       * Key: i
+       * Description: Remap i to k for 🔼 movement
+       */
     {
       "before": [
         "i"
@@ -116,9 +117,9 @@
       ]
     },
     /*
-     * Key: j
-     * Description: Remap j to h for ◀️ movement
-     */
+       * Key: j
+       * Description: Remap j to h for ◀️ movement
+       */
     {
       "before": [
         "j"
@@ -128,9 +129,9 @@
       ]
     },
     /*
-     * Key: K
-     * Description: Super-jump 🔽 (12 lines)
-     */
+       * Key: K
+       * Description: Super-jump 🔽 (12 lines)
+       */
     {
       "before": [
         "K"
@@ -151,9 +152,9 @@
       ]
     },
     /*
-     * Key: I
-     * Description: Super-jump 🔼 (12 lines)
-     */
+       * Key: I
+       * Description: Super-jump 🔼 (12 lines)
+       */
     {
       "before": [
         "I"
@@ -174,9 +175,9 @@
       ]
     },
     /*
-     * Key: J
-     * Description: Remap J → 0 (start of line)
-     */
+       * Key: J
+       * Description: Remap J → 0 (start of line)
+       */
     {
       "before": [
         "J"
@@ -186,9 +187,9 @@
       ]
     },
     /*
-     * Key: L
-     * Description: Remap L → $h (end of line)
-     */
+       * Key: L
+       * Description: Remap L → $h (end of line)
+       */
     {
       "before": [
         "L"
@@ -200,9 +201,9 @@
     },
     /* --- Module: Comment --- */
     /*
-     * Key: g b c
-     * Description: Toggle block comment
-     */
+       * Key: g b c
+       * Description: Toggle block comment
+       */
     {
       "before": [
         "g",
@@ -215,17 +216,17 @@
     },
     /* --- Module: Plugin --- */
     /*
-     * Key: gc
-     * Description: Toggle line comment for the current line or selection (already support in VSCODEVIM)
-     * Module: Comment
-     */
+       * Key: gc
+       * Description: Toggle line comment for the current line or selection (already support in VSCODEVIM)
+       * Module: Comment
+       */
     /*  <-----  Module: Comment [End] ------> */
     /*  <-----  Module: Plugin [Start] ------> */
     /*
-     * Key: <leader> + w
-     * Description: Open Whichkey menu
-     * Plugin: Whichkey
-     */
+       * Key: <leader> + w
+       * Description: Open Whichkey menu
+       * Plugin: Whichkey
+       */
     {
       "before": [
         "<leader>",
@@ -236,10 +237,10 @@
       ]
     },
     /*
-     * Key: W
-     * Description: Open WhichKey menu (alternative)
-     * Plugin: WhichKey
-     */
+       * Key: W
+       * Description: Open WhichKey menu (alternative)
+       * Plugin: WhichKey
+       */
     {
       "before": [
         "W"
@@ -249,10 +250,10 @@
       ]
     },
     /*
-     * Key: r
-     * Description: Replace with register [a]
-     * Plugin: ReplaceWithRegister
-     */
+       * Key: r
+       * Description: Replace with register [a]
+       * Plugin: ReplaceWithRegister
+       */
     {
       "before": [
         "r"
@@ -266,9 +267,9 @@
     },
     /* --- Module: CRUD --- */
     /*
-     * Key: y
-     * Description: Yank to register [a]
-     */
+       * Key: y
+       * Description: Yank to register [a]
+       */
     {
       "before": [
         "y"
@@ -280,9 +281,9 @@
       ]
     },
     /*
-     * Key: d
-     * Description: Delete to blackhole register
-     */
+       * Key: d
+       * Description: Delete to blackhole register
+       */
     {
       "before": [
         "d"
@@ -294,9 +295,9 @@
       ]
     },
     /*
-     * Key: n d
-     * Description: Delete to register [a]
-     */
+       * Key: n d
+       * Description: Delete to register [a]
+       */
     {
       "before": [
         "n",
@@ -309,9 +310,9 @@
       ]
     },
     /*
-     * Key: c
-     * Description: Cut to blackhole register
-     */
+       * Key: c
+       * Description: Cut to blackhole register
+       */
     {
       "before": [
         "c"
@@ -323,9 +324,9 @@
       ]
     },
     /*
-     * Key: n c
-     * Description: Cut to register [a]
-     */
+       * Key: n c
+       * Description: Cut to register [a]
+       */
     {
       "before": [
         "n",
@@ -342,9 +343,9 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     /* --- Module: Movement --- */
     /*
-     * Key: k
-     * Description: Move down (j)
-     */
+       * Key: k
+       * Description: Move down (j)
+       */
     {
       "before": [
         "k"
@@ -354,9 +355,9 @@
       ]
     },
     /*
-     * Key: i
-     * Description: Move 🔼 (k)
-     */
+       * Key: i
+       * Description: Move 🔼 (k)
+       */
     {
       "before": [
         "i"
@@ -366,9 +367,9 @@
       ]
     },
     /*
-     * Key: j
-     * Description: Move left (h)
-     */
+       * Key: j
+       * Description: Move left (h)
+       */
     {
       "before": [
         "j"
@@ -378,9 +379,9 @@
       ]
     },
     /*
-     * Key: K
-     * Description: Jump down 12 lines
-     */
+       * Key: K
+       * Description: Jump down 12 lines
+       */
     {
       "before": [
         "K"
@@ -401,11 +402,11 @@
       ]
     },
     /*
-     * Key: I
-     * Description: Jump up 🔽 lines (kkkkkkkkkkkk)
-     * Why this Design: Enhance the normal j(🔽)
-     * Module: Movement
-     */
+       * Key: I
+       * Description: Jump up 🔽 lines (kkkkkkkkkkkk)
+       * Why this Design: Enhance the normal j(🔽)
+       * Module: Movement
+       */
     {
       "before": [
         "I"
@@ -426,11 +427,11 @@
       ]
     },
     /*
-     * Key: H
-     * Description: Jump to start of line (0)
-     * Why this Design: Enhance the normal j(🔽)
-     * Module: Movement
-     */
+       * Key: H
+       * Description: Jump to start of line (0)
+       * Why this Design: Enhance the normal j(🔽)
+       * Module: Movement
+       */
     {
       "before": [
         "H"
@@ -440,9 +441,9 @@
       ]
     },
     /*
-     * Key: J
-     * Description: Insert at line start (I)
-     */
+       * Key: J
+       * Description: Insert at line start (I)
+       */
     {
       "before": [
         "J"
@@ -452,10 +453,10 @@
       ]
     },
     /*
-     * Key: h
-     * Description: Map h → insert mode (i)
-     * Why this design: j left-movement key is (h)
-     */
+       * Key: h
+       * Description: Map h → insert mode (i)
+       * Why this design: j left-movement key is (h)
+       */
     {
       "before": [
         "h"
@@ -465,10 +466,10 @@
       ]
     },
     /*
-     * Key: L
-     * Description: Insert at line end (A)
-     * Why this design: Since lowercase l moves right, uppercase L naturally extends to end-of-line insertion
-     */
+       * Key: L
+       * Description: Insert at line end (A)
+       * Why this design: Since lowercase l moves right, uppercase L naturally extends to end-of-line insertion
+       */
     {
       "before": [
         "L"
@@ -479,9 +480,9 @@
     },
     /* --- Module: Navigation --- */
     /*
-     * Key: <leader> a
-     * Description: Jump to mark [a]
-     */
+       * Key: <leader> a
+       * Description: Jump to mark [a]
+       */
     {
       "before": [
         "<leader>",
@@ -493,9 +494,9 @@
       ]
     },
     /*
-     * Key: g r
-     * Description: Find references
-     */
+       * Key: g r
+       * Description: Find references
+       */
     {
       "before": [
         "g",
@@ -506,10 +507,10 @@
       ]
     },
     /*
-     * Key: g f
-     * Description: Quick file open
-     * Command: workbench.action.quickOpen
-     */
+       * Key: g f
+       * Description: Quick file open
+       * Command: workbench.action.quickOpen
+       */
     {
       "before": [
         "g",
@@ -520,10 +521,10 @@
       ]
     },
     /*
-     * Key: g g
-     * Description: Set mark [a] (side effect) then jump to file start
-     * Module: Navigation
-     */
+       * Key: g g
+       * Description: Set mark [a] (side effect) then jump to file start
+       * Module: Navigation
+       */
     {
       "before": [
         "g",
@@ -537,10 +538,10 @@
       ]
     },
     /*
-     * Key: g [
-     * Description: Jump to next error/warning (marker)
-     * Module: Navigation
-     */
+       * Key: g [
+       * Description: Jump to next error/warning (marker)
+       * Module: Navigation
+       */
     {
       "before": [
         "g",
@@ -551,10 +552,10 @@
       ]
     },
     /*
-     * Key: g ]
-     * Description: Jump to previous error/warning (marker)
-     * Module: Navigation
-     */
+       * Key: g ]
+       * Description: Jump to previous error/warning (marker)
+       * Module: Navigation
+       */
     {
       "before": [
         "g",
@@ -565,10 +566,10 @@
       ]
     },
     /*
-     * Key: g h
-     * Description: Show hover info
-     * Module: Navigation
-     */
+       * Key: g h
+       * Description: Show hover info
+       * Module: Navigation
+       */
     {
       "before": [
         "g",
@@ -579,10 +580,10 @@
       ]
     },
     /*
-     * Key: G
-     * Description: Set mark [a] (side effect) then jump to file end
-     * Module: Navigation
-     */
+       * Key: G
+       * Description: Set mark [a] (side effect) then jump to file end
+       * Module: Navigation
+       */
     {
       "before": [
         "G"
@@ -594,9 +595,9 @@
       ]
     },
     /*
-     * Key: E
-     * Description: Previous tab (gT)
-     */
+       * Key: E
+       * Description: Previous tab (gT)
+       */
     {
       "before": [
         "E"
@@ -607,9 +608,9 @@
       ]
     },
     /*
-     * Key: R
-     * Description: Next tab (gt)
-     */
+       * Key: R
+       * Description: Next tab (gt)
+       */
     {
       "before": [
         "R"
@@ -622,9 +623,9 @@
     /* --- Module: CRUD --- */
     /* Yank/Delete/Cut/Paste operations */
     /*
-     * Key: P
-     * Description: Yank to register [a]
-     */
+       * Key: P
+       * Description: Yank to register [a]
+       */
     {
       "before": [
         "P"
@@ -636,9 +637,9 @@
       ]
     },
     /*
-     * Key: y
-     * Description: Yank to register [a]
-     */
+       * Key: y
+       * Description: Yank to register [a]
+       */
     {
       "before": [
         "y"
@@ -650,9 +651,9 @@
       ]
     },
     /*
-     * Key: c
-     * Description: Cut to blackhole register
-     */
+       * Key: c
+       * Description: Cut to blackhole register
+       */
     {
       "before": [
         "c"
@@ -664,9 +665,9 @@
       ]
     },
     /*
-     * Key: C
-     * Description: Cut line to blackhole register
-     */
+       * Key: C
+       * Description: Cut line to blackhole register
+       */
     {
       "before": [
         "C"
@@ -678,10 +679,10 @@
       ]
     },
     /*
-     * Key: n c
-     * Description: Cut to register [a]
-     * Module: CRUD
-     */
+       * Key: n c
+       * Description: Cut to register [a]
+       * Module: CRUD
+       */
     {
       "before": [
         "n",
@@ -694,9 +695,9 @@
       ]
     },
     /*
-     * Key: n C
-     * Description: Cut line to register [a]
-     */
+       * Key: n C
+       * Description: Cut line to register [a]
+       */
     {
       "before": [
         "n",
@@ -709,9 +710,9 @@
       ]
     },
     /*
-     * Key: d
-     * Description: Delete to blackhole register
-     */
+       * Key: d
+       * Description: Delete to blackhole register
+       */
     {
       "before": [
         "d"
@@ -723,9 +724,9 @@
       ]
     },
     /*
-     * Key: n d
-     * Description: Delete to register [a]
-     */
+       * Key: n d
+       * Description: Delete to register [a]
+       */
     {
       "before": [
         "n",
@@ -738,9 +739,9 @@
       ]
     },
     /*
-     * Key: d d
-     * Description: Delete line to blackhole register
-     */
+       * Key: d d
+       * Description: Delete line to blackhole register
+       */
     {
       "before": [
         "d",
@@ -754,9 +755,9 @@
       ]
     },
     /*
-     * Key: n d d
-     * Description: Delete line to register [a]
-     */
+       * Key: n d d
+       * Description: Delete line to register [a]
+       */
     {
       "before": [
         "n",
@@ -771,9 +772,9 @@
       ]
     },
     /*
-     * Key: p
-     * Description: Paste from register [a]
-     */
+       * Key: p
+       * Description: Paste from register [a]
+       */
     {
       "before": [
         "p"
@@ -786,9 +787,9 @@
     },
     /* Register-specific operations */
     /*
-     * Key: b y
-     * Description: Yank to register [b]
-     */
+       * Key: b y
+       * Description: Yank to register [b]
+       */
     {
       "before": [
         "b",
@@ -801,9 +802,9 @@
       ]
     },
     /*
-     * Key: c y
-     * Description: Yank to register [c]
-     */
+       * Key: c y
+       * Description: Yank to register [c]
+       */
     {
       "before": [
         "c",
@@ -816,9 +817,9 @@
       ]
     },
     /*
-     * Key: d y
-     * Description: Yank to register [d]
-     */
+       * Key: d y
+       * Description: Yank to register [d]
+       */
     {
       "before": [
         "d",
@@ -831,9 +832,9 @@
       ]
     },
     /*
-     * Key: e y
-     * Description: Yank to register [e]
-     */
+       * Key: e y
+       * Description: Yank to register [e]
+       */
     {
       "before": [
         "e",
@@ -846,9 +847,9 @@
       ]
     },
     /*
-     * Key: b p
-     * Description: Paste from register [b]
-     */
+       * Key: b p
+       * Description: Paste from register [b]
+       */
     {
       "before": [
         "b",
@@ -861,9 +862,9 @@
       ]
     },
     /*
-     * Key: c p
-     * Description: Paste from register [c]
-     */
+       * Key: c p
+       * Description: Paste from register [c]
+       */
     {
       "before": [
         "c",
@@ -876,9 +877,9 @@
       ]
     },
     /*
-     * Key: d p
-     * Description: Paste from register [d]
-     */
+       * Key: d p
+       * Description: Paste from register [d]
+       */
     {
       "before": [
         "d",
@@ -891,9 +892,9 @@
       ]
     },
     /*
-     * Key: e p
-     * Description: Paste from register [e]
-     */
+       * Key: e p
+       * Description: Paste from register [e]
+       */
     {
       "before": [
         "e",
@@ -907,10 +908,10 @@
     },
     /* --- Module: Plugin --- */
     /*
-     * Key: W
-     * Description: Show WhichKey menu
-     * Plugin: WhichKey
-     */
+       * Key: W
+       * Description: Show WhichKey menu
+       * Plugin: WhichKey
+       */
     {
       "before": [
         "W"
@@ -920,10 +921,10 @@
       ]
     },
     /*
-     * Key: <leader> w
-     * Description: Show WhichKey menu (alternate)
-     * Plugin: WhichKey
-     */
+       * Key: <leader> w
+       * Description: Show WhichKey menu (alternate)
+       * Plugin: WhichKey
+       */
     {
       "before": [
         "<leader>",
@@ -934,9 +935,9 @@
       ]
     },
     /*
-     * Key: r
-     * Description: Replace with register [a]
-     */
+       * Key: r
+       * Description: Replace with register [a]
+       */
     {
       "before": [
         "r"
@@ -949,9 +950,9 @@
       ]
     },
     /*
-     * Key: b r
-     * Description: Replace with register [b]
-     */
+       * Key: b r
+       * Description: Replace with register [b]
+       */
     {
       "before": [
         "b",
@@ -966,10 +967,10 @@
     },
     /* Easymotion integration */
     /*
-     * Key: S
-     * Description: Activate Easymotion search
-     * Plugin: Easymotion
-     */
+       * Key: S
+       * Description: Activate Easymotion search
+       * Plugin: Easymotion
+       */
     {
       "before": [
         "S"
@@ -981,10 +982,10 @@
       ]
     },
     /*
-     * Key: <leader> s
-     * Description: Alternative Easymotion trigger
-     * Plugin: Easymotion
-     */
+       * Key: <leader> s
+       * Description: Alternative Easymotion trigger
+       * Plugin: Easymotion
+       */
     {
       "before": [
         "<leader>",
@@ -998,9 +999,9 @@
     },
     /* Special line operations */
     /*
-     * Key: d L
-     * Description: Delete to end of line
-     */
+       * Key: d L
+       * Description: Delete to end of line
+       */
     {
       "before": [
         "d",
@@ -1012,9 +1013,9 @@
       ]
     },
     /*
-     * Key: d J
-     * Description: Delete to line start
-     */
+       * Key: d J
+       * Description: Delete to line start
+       */
     {
       "before": [
         "d",
