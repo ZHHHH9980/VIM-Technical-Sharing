@@ -623,6 +623,20 @@
     /* --- Module: CRUD --- */
     /* Yank/Delete/Cut/Paste operations */
     /*
+       * Key: Y
+       * Description: Yank to system clipboard
+       */
+    {
+      "before": [
+        "Y"
+      ],
+      "after": [
+        "\"",
+        "*",
+        "y"
+      ]
+    },
+    /*
        * Key: P
        * Description: Yank to register [a]
        */
