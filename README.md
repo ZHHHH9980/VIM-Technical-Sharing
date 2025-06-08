@@ -15,4 +15,13 @@ This repository contains my personal configuration for a Vim-powered Cursor IDE 
 └── DemoSrcCode             # Demo source code for the blog, no need to care about it
 ```
 
-There are 
+## Play with Codesandbox
+
+[Playground link](https://codesandbox.io/p/sandbox/vim-playground-forked-vm6tfz?file=%2FREADME.md%3A24%2C1)
+
+1. command + shift + p
+2. type settings.json
+3. click the 'Open User Settings(JSON)'
+4. copy the content of Settings/settings.json to the file
+5. Save the file
+6. Install the extension 'VSCodeVim' and 'Which Key'(optional)
